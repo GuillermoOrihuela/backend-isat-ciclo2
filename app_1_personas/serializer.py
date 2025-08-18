@@ -1,6 +1,9 @@
 from rest_framework import serializers
 from .models import UsuarioModel, ClienteModel, ProveedorModel
-from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
+
 
 
 class UsuarioSerializer(serializers.ModelSerializer):
@@ -9,15 +12,17 @@ class UsuarioSerializer(serializers.ModelSerializer):
     class Meta:
         model=UsuarioModel
         fields=(
+            'dni',
             'nombre' ,
             'email',
             'password',
             'direccion',
             'telefono',
-            'is_staff',
             'is_active',
+            'is_staff',
+            'is_superuser'
         )
-        read_only_fields=('is_staff',)
+        # read_only_fields=('is_staff',)
     def create(self, validated_data):
         password = validated_data.pop('password')
         user = User(**validated_data)
