@@ -12,12 +12,12 @@ from .serializer import CustodioSerializer, ControlMantenimientoSerializer
 
 class ControlMantenimientoViewSet(viewsets.ModelViewSet):
     queryset=ControlMantenimientoModel.objects.all()
-    permission_classes=[permissions.IsAuthenticated]
+    permission_classes=[permissions.AllowAny]
     serializer_class=ControlMantenimientoSerializer
 
 class CustodioViewSet(viewsets.ModelViewSet):
     queryset=CustodiaModel.objects.all()
-    permission_classes=[permissions.IsAuthenticated]
+    permission_classes=[permissions.AllowAny]
     serializer_class=CustodioSerializer
 
 

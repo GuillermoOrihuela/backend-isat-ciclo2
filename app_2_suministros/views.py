@@ -12,11 +12,11 @@ from .serializer import ProductoSerializer, ServicioSerializer
 
 class ProductoViewSet(viewsets.ModelViewSet):
     queryset=ProductoModel.objects.all()
-    permission_classes=[permissions.IsAuthenticated]
+    permission_classes=[permissions.AllowAny]
     serializer_class=ProductoSerializer
 
 
 class ServicioViewSet(viewsets.ModelViewSet):
     queryset=ServicioModel.objects.all()
-    permission_classes=[permissions.IsAuthenticated]
+    permission_classes=[permissions.AllowAny]
     serializer_class=ServicioSerializer

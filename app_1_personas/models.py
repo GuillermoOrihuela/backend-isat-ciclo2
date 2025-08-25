@@ -1,6 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import ( 
-                                        BaseUserManager, 
+from django.contrib.auth.models import ( BaseUserManager, 
                                         AbstractBaseUser, 
                                         PermissionsMixin)
 
@@ -19,6 +18,7 @@ class AdministradorUsuario(BaseUserManager):
         extra_fields.setdefault('is_staff', True)
         extra_fields.setdefault('is_superuser', True)
         return self.create_user(email, password, **extra_fields)
+
 
 class UsuarioModel(AbstractBaseUser, PermissionsMixin):
     dni = models.CharField(max_length=8, unique=True)

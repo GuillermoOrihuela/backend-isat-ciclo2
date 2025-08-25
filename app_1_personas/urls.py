@@ -13,6 +13,8 @@ router.register('api/clientes', ClienteViewSet, 'cliente')
 router.register('api/proveedores', proveedorViewSet, 'proveedor')
 
 urlpatterns=[
+    # path('','importar-csv/', ClienteCSVImportView.as_view(), name='importar-clientes-csv'),
+
     path('login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('', include(router.urls)),

@@ -4,14 +4,11 @@ from django.contrib.auth import get_user_model
 
 User = get_user_model()
 
-
-
 class UsuarioSerializer(serializers.ModelSerializer):
-    password = serializers.CharField(write_only=True)
-
     class Meta:
-        model=UsuarioModel
-        fields=(
+        password = serializers.CharField(write_only=True)
+        model = UsuarioModel
+        fields = (
             'dni',
             'nombre' ,
             'email',
@@ -32,20 +29,20 @@ class UsuarioSerializer(serializers.ModelSerializer):
     
 class ClienteSerializer(serializers.ModelSerializer):
     class Meta:
-        model=ClienteModel
-        fields=(
-             'dni',
+        model = ClienteModel
+        fields = (
+            'dni',
             'nombres',
             'apellidos',
             'direccion',
             'telefono',
-            'email',
+            'email'
             )
         
 class ProveedorSerializer(serializers.ModelSerializer):
     class Meta:
-        model=ProveedorModel
-        fields=(
+        model = ProveedorModel
+        fields = (
              'dni',
             'nombres',
             'apellidos',
