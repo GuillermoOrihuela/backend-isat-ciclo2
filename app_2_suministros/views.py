@@ -18,5 +18,5 @@ class ProductoViewSet(viewsets.ModelViewSet):
 
 class ServicioViewSet(viewsets.ModelViewSet):
     queryset=ServicioModel.objects.all()
-    permission_classes=[permissions.AllowAny]
+    permission_classes=[permissions.IsAuthenticated]
     serializer_class=ServicioSerializer

@@ -9,6 +9,7 @@ class UsuarioSerializer(serializers.ModelSerializer):
         password = serializers.CharField(write_only=True)
         model = UsuarioModel
         fields = (
+            'id',
             'dni',
             'nombre' ,
             'email',
@@ -31,6 +32,7 @@ class ClienteSerializer(serializers.ModelSerializer):
     class Meta:
         model = ClienteModel
         fields = (
+            'id',
             'dni',
             'nombres',
             'apellidos',
@@ -38,12 +40,14 @@ class ClienteSerializer(serializers.ModelSerializer):
             'telefono',
             'email'
             )
+        read_only_fields=("id",)
         
 class ProveedorSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProveedorModel
         fields = (
-             'dni',
+            'id',
+            'dni',
             'nombres',
             'apellidos',
             'direccion',

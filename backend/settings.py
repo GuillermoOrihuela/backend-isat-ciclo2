@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ["*"]
 
 # CORS_ALLOWED_ORIGINS = ["*","127.0.0.1"]
-
+CORS_ALLOW_ALL_ORIGINS = True
 
 # Application definition
 
@@ -135,7 +135,7 @@ REST_FRAMEWORK = {
 
 
 
-CORS_ALLOW_ALL_ORIGINS = True
+
 
 # CORS_ALLOW_CREDENTIALS = True  # Si usas cookies o headers de autenticación
 CORS_ALLOW_HEADERS = [
