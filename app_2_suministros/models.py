@@ -14,6 +14,10 @@ class ProductoModel(models.Model):
     fecha_modificacion = models.DateTimeField(auto_now=True)
     id_proveedor = models.ForeignKey(ProveedorModel, on_delete=models.CASCADE)
     
+class ImagenModel(models.Model):
+    producto = models.ForeignKey(ProductoModel, on_delete=models.CASCADE, related_name='imagenes')
+    imagen = models.ImageField(upload_to='static/images/')
+
 
 class ServicioModel(models.Model):
     nombre = models.CharField(max_length=50)
