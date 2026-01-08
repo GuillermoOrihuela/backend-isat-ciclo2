@@ -13,14 +13,14 @@ Sistema backend robusto diseñado para administrar operaciones empresariales com
 
 ## Características Principales
 
-- ✅ Autenticación JWT (JSON Web Tokens)
-- ✅ API RESTful con serialización de datos
-- ✅ Sistema de usuarios personalizado con roles
-- ✅ Gestión de productos con imágenes
-- ✅ Control de mantenimientos programados
-- ✅ Registro de custodias de equipos
-- ✅ CORS configurado para integración frontend
-- ✅ Panel de administración Django
+- Autenticación JWT (JSON Web Tokens)
+- API RESTful con serialización de datos
+- Sistema de usuarios personalizado con roles
+- Gestión de productos con imágenes
+- Control de mantenimientos programados
+- Registro de custodias de equipos
+- CORS configurado para integración frontend
+- Panel de administración Django
 
 ## Tecnologías Utilizadas
 
