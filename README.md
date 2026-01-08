@@ -2,7 +2,7 @@
 
 API REST desarrollada con Django y Django REST Framework para la gestión integral de un sistema empresarial que incluye módulos de personas, suministros, ventas y seguimientos.
 
-## 📋 Descripción
+## Descripción
 
 Sistema backend robusto diseñado para administrar operaciones empresariales completas, incluyendo:
 
@@ -11,7 +11,7 @@ Sistema backend robusto diseñado para administrar operaciones empresariales com
 - **Gestión de Ventas**: Módulo para procesar transacciones comerciales
 - **Gestión de Seguimientos**: Control de mantenimientos y custodias
 
-## 🚀 Características Principales
+## Características Principales
 
 - ✅ Autenticación JWT (JSON Web Tokens)
 - ✅ API RESTful con serialización de datos
@@ -22,7 +22,7 @@ Sistema backend robusto diseñado para administrar operaciones empresariales com
 - ✅ CORS configurado para integración frontend
 - ✅ Panel de administración Django
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **Framework**: Django 5.2.5
 - **API**: Django REST Framework
@@ -31,7 +31,7 @@ Sistema backend robusto diseñado para administrar operaciones empresariales com
 - **CORS**: django-cors-headers
 - **Python**: 3.x
 
-## 📦 Requisitos Previos
+## Requisitos Previos
 
 - Python 3.8 o superior
 - pip (gestor de paquetes de Python)
@@ -87,7 +87,7 @@ python manage.py runserver
 
 El servidor estará disponible en: `http://127.0.0.1:8000/`
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 Backend_django2/
@@ -155,7 +155,7 @@ http://127.0.0.1:8000/
 /admin/            # Panel de administración Django
 ```
 
-## 🔐 Autenticación
+## Autenticación
 
 El sistema utiliza JWT (JSON Web Tokens) para la autenticación. Para acceder a los endpoints protegidos:
 
@@ -165,7 +165,7 @@ El sistema utiliza JWT (JSON Web Tokens) para la autenticación. Para acceder a 
 Authorization: Bearer <tu-token-jwt>
 ```
 
-## 🗄️ Modelos de Datos
+## Modelos de Datos
 
 ### app_1_personas
 - **UsuarioModel**: Sistema de usuarios con autenticación personalizada
@@ -181,7 +181,7 @@ Authorization: Bearer <tu-token-jwt>
 - **ControlMantenimientoModel**: Programación de mantenimientos
 - **CustodiaModel**: Registro de custodias de equipos
 
-## ⚙️ Configuración
+## Configuración
 
 ### Variables de Entorno (Producción)
 
@@ -206,22 +206,22 @@ DATABASES = {
 }
 ```
 
-## 🔒 Seguridad
+## Seguridad
 
-- ✅ SECRET_KEY configurado
-- ✅ CORS configurado para orígenes permitidos
-- ✅ Autenticación JWT con blacklist
-- ✅ Validaciones de contraseñas
-- ⚠️ Cambiar DEBUG a False en producción
-- ⚠️ Configurar ALLOWED_HOSTS apropiadamente
+- SECRET_KEY configurado
+- CORS configurado para orígenes permitidos
+- Autenticación JWT con blacklist
+- Validaciones de contraseñas
+- Cambiar DEBUG a False en producción
+- Configurar ALLOWED_HOSTS apropiadamente
 
-## 🧪 Testing
+## Testing
 
 ```bash
 python manage.py test
 ```
 
-## 📝 Migraciones
+## Migraciones
 
 Crear nuevas migraciones:
 ```bash
@@ -238,7 +238,7 @@ Ver estado de migraciones:
 python manage.py showmigrations
 ```
 
-## 🤝 Contribución
+## Contribución
 
 1. Fork el proyecto
 2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
@@ -246,15 +246,15 @@ python manage.py showmigrations
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto es parte de un proyecto integrador académico.
 
-## 👥 Autores
+## Autores
 
 Proyecto desarrollado para ISAT - II Ciclo
 
-## 📞 Soporte
+## Soporte
 
 Para reportar problemas o sugerencias, por favor abre un issue en el repositorio.
 
